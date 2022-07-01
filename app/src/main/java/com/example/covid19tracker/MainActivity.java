@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             };
             requestQueue.add(jsonObjectRequest);
         }
-
+//below function used for search functionality based on states
     private void filterState(String state) {
         ArrayList<Model> filterers= new ArrayList<>();
         for(Model item: list)

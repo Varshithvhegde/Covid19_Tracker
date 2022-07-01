@@ -13,7 +13,7 @@ import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+//in this adapter class we get information of individual item and show it.
 public class JAdapter extends RecyclerView.Adapter<JAdapter.ViewHolder> {
     private ArrayList<Model> modelList;
     private final Context context;
