@@ -58,9 +58,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
         private void getStateData () {
-
+            //below is api link provided  By govt of india to get all details about covid 19 cases in india
             String url = "https://data.covid19india.org/state_district_wise.json";
+            //volley is used to get url request
             RequestQueue requestQueue = Volley.newRequestQueue(this);
+            ///bcz all the api gives back json file as output we have parse json file so we create json object
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, response -> {
                 try {
                     Iterator<String> keys = response.keys();
